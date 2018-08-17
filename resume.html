@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+
+<div class="main">
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="android.png" alt="Mountains" style="width:100%">
+      <h3>Android Workshop</h3>
+      <p>I have completed android workshop of two days. We have learnt a lot and that was very hectic schedule.  </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="iim.png" alt="Lights" style="width:100%">
+      <h3>Art Mela</h3>
+      <p>We have participated in 'Art Mela', which was held at IIM Ahemdabad. We got first prize in 'Craft Work Competition'. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="event1.png" alt="Nature" style="width:100%">
+      <h3>Revive</h3>
+      <p>We have done a great work at our college 'Art Club' event 'Revive'. It is a workshop where you can learn how to do craft, painting and sketching.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="matra.png" alt="Mountains" style="width:100%">
+      <h3>Matribhasha Diwas</h3>
+      <p>'Matribhasha Diwas' is one of the best event of our college. We have made many attractive posters and paintings of all the languages.</p>
+    </div>
+  </div>
+>
+</div>
+
+
+</div>
+
+</body>
+</html>
